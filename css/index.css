@@ -1,4 +1,4 @@
-﻿
+
 /*顶部导航背景层*/
 .top-nav-bg {
 	width: 100%;
@@ -20,12 +20,11 @@
 	margin: 0 auto;
 }
 
-
 /*css sprite(背景图)*/
-.quick_link li, .quick_link li s, .search_tablist li, .search_tablist li.selected a, .search_panel .rc_tp, .search_btn, 
-.product_list li, .product_list li s, .product_list li a:hover, .product_list .t_mall span, .tb_slide_triggers li, 
-#product .rc_bt, #mall .hd h3 s, .info_list li, .mall_prev, .mall_next, .box .rc_tp, .box .rc_bt, .box .rc_tp b, 
-.box .rc_bt b, .mall_brands_bd, .mall_brands_bd s, .mall_brands_content a, #mall .bt_bg, .ks_switchable_content i, 
+.quick_link li, .quick_link li em, .search_tablist li, .search_tablist li.selected a, .search_panel .rc_tp, .search_btn, 
+.product_list li, .product_list li em, .product_list li a:hover, .product_list .t_mall span, .tb_slide_triggers li, 
+#product .rc_bt, #mall .hd h3 em, .info_list li, .mall_prev, .mall_next, .box .rc_tp, .box .rc_bt, .box .rc_tp em, 
+.box .rc_bt em, .mall_brands_bd, .mall_brands_bd em, .mall_brands_content a, #mall .bt_bg, .ks_switchable_content i, 
 #category .hd h3 a, #category .hd, .category_links li, .category_chn li, .help_guest a, .tab_holder li, .tab_holder, 
 .box_skin_blue .hd h3, #p4p .bd .price strong, .links_panel li a {
 	background-image: url(../images/taobao.png);
@@ -57,7 +56,7 @@
 .quick_link li.mytaobao {
 	background-position: -999em 0;/*覆盖上面的背景定位,去除垂直竖线*/
 }
-.quick_link li s {/*存放背景小图标的小容器*/
+.quick_link li em {/*存放背景小图标的小容器*/
 	width: 15px;
 	height: 12px;
 	font-size: 0;
@@ -66,19 +65,19 @@
 	top: 6px;
 	cursor: pointer;
 }
-.quick_link li.mytaobao s {
+.quick_link li.mytaobao em {
 	background-position: -149px -352px;
 }
-.quick_link li.cart s {
+.quick_link li.cart em {
 	background-position: -149px -326px;
 }
-.quick_link li.favorite s {
+.quick_link li.favorite em {
 	background-position: -149px -364px;
 }
 .quick_link li.forum {
 	padding-left: 8px;/*重设padding-left属性值(更小值)，因为该li没有存放小图标*/
 }
-.quick_link li.help s {
+.quick_link li.help em {
 	background-position: -149px -339px;
 }
 
@@ -201,7 +200,7 @@
 */
 
 
-/*content模块*/
+/*content模块，采用负边距布局，使页面宽度自适应*/
 #content {
 
 }
@@ -270,14 +269,14 @@
 	font-weight: 700;
 }
 /*存放小图标的小容器*/
-.product_list li s {
+.product_list li em {
 	width: 16px;
 	height: 16px;
 	position: absolute;
 	margin-left: -27px;/*或者使用left:10px相当于a进行定位*/
 	top: 5px;
 }
-.product_list li.s s {
+.product_list li.s em {
 	width: 20px;
 	height: 20px;
 	margin-left: -29px;
@@ -302,37 +301,37 @@
 }
 
 /*产品列表项背景定位*/
-.product_list li.t_mall s {
+.product_list li.t_mall em {
 	background-position: -147px -113px;
 }
-.product_list li.t_3c s {
+.product_list li.t_3c em {
 	background-position: -127px -133px;
 }
-.product_list li.t_news s {
+.product_list li.t_news em {
 	background-position: -147px -133px;
 }
-.product_list li.t_digi s {
+.product_list li.t_digi em {
 	background-position: -119px -185px;
 }
-.product_list li.t_jipiao s {
+.product_list li.t_jipiao em {
 	background-position: -118px -153px;
 }
-.product_list li.t_caipiao s {
+.product_list li.t_caipiao em {
 	background-position: -135px -185px;
 }
-.product_list li.t_jianghu s {
+.product_list li.t_jianghu em {
 	background-position: -151px -169px;
 }
-.product_list li.t_shiyi s {
+.product_list li.t_shiyi em {
 	background-position: -151px -153px;
 }
-.product_list li.t_garden s {
+.product_list li.t_garden em {
 	background-position: -119px -168px;
 }
-.product_list li.t_wangwang s {
+.product_list li.t_wangwang em {
 	background-position: -139px -203px;
 }
-.product_list li.t_wap s {
+.product_list li.t_wap em {
 	background-position: -135px -153px;
 }
 
@@ -346,7 +345,7 @@
 #product p.more a {
 	color: #7E93A5;
 }
-#product b.rc_bt {
+#product em.rc_bt {/*分界线下边框*/
 	display: block;
 	height: 4px;
 	font-size: 0;
@@ -354,7 +353,7 @@
 	background-position: -163px -209px;
 	position: relative;
 }
-#product b.r_shadow {
+#product em.r_shadow {/*阴影部分*/
 	display: block;
 	height: 331px;
 	width: 1px;
@@ -444,7 +443,7 @@
 	/*float: left;*/
 	position: relative;
 }
-#mall .hd h3 s {
+#mall .hd h3 em {
 	width: 131px;
 	height: 17px;
 	background-position: 0 -92px;
@@ -514,15 +513,15 @@
 	margin-top: -4px;
 	background-position: -162px -267px;
 }
-.box .rc_tp b, .box .rc_bt b {/*圆角效果*/
+.box .rc_tp em, .box .rc_bt em {/*圆角效果*/
 	float: right;
 	width: 4px;
 	height: 4px;
 }
-.box .rc_tp b {/*圆角效果*/
+.box .rc_tp em {/*圆角效果*/
 	background-position: -159px -264px;
 }
-.box .rc_bt b {/*圆角效果*/
+.box .rc_bt em {/*圆角效果*/
 	background-position: -159px -267px;
 }
 
@@ -537,7 +536,7 @@
 	border: 1px solid #DBDBDB;
 	padding: 1px 0;
 }
-.mall_brands_bd s {
+.mall_brands_bd span {
 	width: 4px;
 	height: 4px;
 	font-size: 0;
@@ -653,7 +652,7 @@
 	top: 0;
 	overflow: hidden;
 }
-/*内容*/
+/*内容分类*/
 #category .bd {
     border: 1px solid #CFDAE4;
     margin-top: -1px;
@@ -688,12 +687,12 @@
 .category_item_single h4 {
 	line-height: 16px;
 }
-.category_item h4 a, .category_item h4 i {
+.category_item h4 a, .category_item h4 em {
 	display: inline-block;
 	vertical-align :middle;
 	color: #1A397C;
 }
-.category_item h4 i {
+.category_item h4 em {
 	height: 100%;
 	width: 0;
 }
@@ -746,11 +745,10 @@
 	border: 1px solid #CBCCCE;
 }
 
-
 /*右边栏模块*/
 .grid_ms .col_sub {
 	width: 310px;
-	margin-left: -310px;/*父边距布局*/
+	margin-left: -310px;/*负边距布局*/
 	padding-top: 6px;
 	/*float: left;*/
 	/*border: 1px solid red;*/
@@ -779,7 +777,7 @@
 	color: #f60;
 	text-decoration: none;
 }
-.help_guest a s {
+.help_guest a em {
 	display: block;
 	line-height: 15px;
 	color: #E4A522;
@@ -791,13 +789,13 @@
 	overflow: hidden;
 	z-index: 1;
 }
-.box_skin_blue .rc_tp b {
+.box_skin_blue .rc_tp em {
 	background-position: -159px -202px;
 }
 .box_skin_blue .rc_bt {
 	background-position: -162px -205px;
 }
-.box_skin_blue .rc_bt b {
+.box_skin_blue .rc_bt em {
 	background-position: -159px -205px;
 }
 
@@ -850,10 +848,10 @@
 	border-left: none;
 	padding-left: 1px;
 }
-.tab_holder li s {
+.tab_holder li em {
 	display: none;
 }
-.tab_holder li.selected s {
+.tab_holder li.selected em {
 	display: block;
 	width: 1px;
 	height: 24px;
@@ -863,7 +861,7 @@
 	float: right;
 	margin-top: -24px;
 }
-.tab_holder li.selected.tab_holder_cw s {
+.tab_holder li.selected.tab_holder_cw em {
 	width: 0;
 	float: left;
 	border-left-color: #e2e9ef;
@@ -1000,7 +998,7 @@
 	margin-top:-1px;
 }
 .exp_list {
-	font-family: 宋体;
+	font-family: '宋体';
 	padding: 10px 0 0 20px;
 }
 .exp_list li {
@@ -1015,7 +1013,7 @@
 	height: 20px;
 	text-indent: -2000px;
 	overflow: hidden;
-	background: url(../images/a_btn.png);
+	background: url(../images/a_btn.png);/*使用背景图片替代a标签*/
 }
 .exp_more {
 	width: 80%;
@@ -1032,7 +1030,6 @@
 	background: #EBF5FA;
 	padding: 5px;
 }
-
 
 /*grid_m模块*/
 .grid_m {
@@ -1099,13 +1096,13 @@
 .box_skin_orange .rc_tp {/*橙色背景*/
 	background-position: -162px -195px;
 }
-.box_skin_orange .rc_tp b {
+.box_skin_orange .rc_tp em {
 	background-position: -159px -195px;
 }
 .box_skin_orange .rc_bt {
 	background-position: -162px -198px;
 }
-.box_skin_orange .rc_bt b {
+.box_skin_orange .rc_bt em {
 	background-position: -159px -198px;
 }
 .box_skin_orange .bd {
